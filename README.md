@@ -1,3 +1,26 @@
+This is a starter project for React with Typescript with Eslint set up and format-on-save in VS Code. Only the VS Code settings are VS Code specific.
+
+To get format-on-save in VS Code, first install the [ESLint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). Then open settings (Ctrl+,) and then clck on "Open settings.json". Enable format-on-save if it isn't already enabled:
+
+```
+  "editor.formatOnSave": true,
+```
+
+By default, ESLint only validates JavaScript. Add these settings to enable linting ts and tsx files:
+
+```
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ]
+```
+
+The rest of this document is the same as the CRA README.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
